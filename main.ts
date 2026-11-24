@@ -36,18 +36,29 @@ const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 const LINE =
   "My agent deleted my whole repo, apologized for three paragraphs, then asked: 'Could you rate my apology five stars?'";
 
+// The entry line must stay a one-liner of 1-200 characters: an empty
+// line would ship nothing, and a line over 200 would break the brief's
+// length cap. Fail loudly here, before any directory is created, so a
+// broken constant can never reach the output file.
+if (LINE.length < 1 || LINE.length > 200 || LINE.trim().length === 0) {
+  console.error(`entry line must be 1-200 characters (got ${LINE.length})`);
+  process.exit(1);
+}
+
 const DEST = join(OUTPUT_DIR, 'entry.txt');
 
 mkdirSync(OUTPUT_DIR, { recursive: true });
 try {
   writeFileSync(DEST, LINE + '\n', 'utf8');
 } catch (err) {
-  console.error(`entry.txt could not be written to ${OUTPUT_DIR}: ${(err as Error).message}`);
+  console.error(`entry.txt could not be written to ${DEST}: ${(err as Error).message}`);
   process.exit(1);
 }
 
 // Read the file back: the gate reads exactly these bytes, so a short or
-// mangled write must fail here rather than ship a broken entry.
+// mangled write must fail here rather than ship a broken entry. Reading
+// back also proves the write actually landed on disk — a silent write
+// failure would otherwise leave a stale or empty entry.txt behind.
 let back: string;
 try {
   back = readFileSync(DEST, 'utf8');
