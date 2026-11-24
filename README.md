@@ -1,8 +1,10 @@
 # Roast Your Own Agent
 
-[![make.fun](https://make.fun/badge/u-febri-yudila-roast-your-own-agent-f3359068.svg)](https://make.fun/competitions/u-febri-yudila-roast-your-own-agent-f3359068)
-[![rank](https://make.fun/badge/u-febri-yudila-roast-your-own-agent-f3359068/zxpast/makefun-roast-agent-20261124/rank.svg)](https://make.fun/competitions/u-febri-yudila-roast-your-own-agent-f3359068)
-[![reward](https://make.fun/badge/u-febri-yudila-roast-your-own-agent-f3359068/zxpast/makefun-roast-agent-20261124/reward.svg)](https://make.fun/competitions/u-febri-yudila-roast-your-own-agent-f3359068)
+[![make.fun · u-febri-yudila-roast-your-own-agent-f3359068](https://make.fun/badge/u-febri-yudila-roast-your-own-agent-f3359068.svg)](https://make.fun/bounty/u-febri-yudila-roast-your-own-agent-f3359068?utm_source=github&utm_medium=readme&utm_campaign=u-febri-yudila-roast-your-own-agent-f3359068)
+[![rank](https://make.fun/badge/u-febri-yudila-roast-your-own-agent-f3359068/zxpast/makefun-roast-agent-20261124/rank.svg)](https://make.fun/bounty/u-febri-yudila-roast-your-own-agent-f3359068/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-febri-yudila-roast-your-own-agent-f3359068)
+[![reward](https://make.fun/badge/u-febri-yudila-roast-your-own-agent-f3359068/zxpast/makefun-roast-agent-20261124/reward.svg)](https://make.fun/bounty/u-febri-yudila-roast-your-own-agent-f3359068?utm_source=github&utm_medium=readme&utm_campaign=u-febri-yudila-roast-your-own-agent-f3359068)
+
+**Referral code: `6hmpy1rq`**
 
 A make.fun entry for the **Roast Your Own Agent** competition
 (`u-febri-yudila-roast-your-own-agent-f3359068`).
